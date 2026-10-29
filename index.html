@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shorts Uploader — Automated Drive-to-YouTube publishing</title>
+  <meta name="description" content="Shorts Uploader is a private automation tool that publishes videos from the owner's Google Drive to their own YouTube channel on a schedule.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff3d57'/%3E%3Cstop offset='1' stop-color='%23ff8a3d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Cpath d='M13 10l9 6-9 6z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="glow"></div>
+
+  <header class="nav">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="logo"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M7 4l13 8-13 8z"/></svg></span>
+        Shorts Uploader
+      </a>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#privacy">Data &amp; privacy</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div>
+          <span class="badge"><span class="dot"></span> Running daily · Personal automation</span>
+          <h1>Your Shorts, published <span class="grad">on autopilot.</span></h1>
+          <p class="lead">Shorts Uploader takes finished videos from a Google Drive folder and publishes them to your own YouTube channel on schedule — titles, descriptions and tags included.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#how">See how it works
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+
+        <div class="mock" aria-hidden="true">
+          <div class="mock-head"><strong>Upload queue</strong><span>Today</span></div>
+          <div class="row">
+            <div class="thumb t1"></div>
+            <div class="meta"><b>What's inside a black hole?</b><span>Published · 09:00</span></div>
+            <span class="pill live">Live</span>
+          </div>
+          <div class="row">
+            <div class="thumb t2"></div>
+            <div class="meta"><b>The coldest place in the universe</b><span>Uploading · 72%</span>
+              <div class="bar"><i style="width:72%"></i></div>
+            </div>
+            <span class="pill up">Uploading</span>
+          </div>
+          <div class="row">
+            <div class="thumb t3"></div>
+            <div class="meta"><b>Why stars twinkle</b><span>Tomorrow · 09:00</span></div>
+            <span class="pill sch">Scheduled</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <div class="center reveal">
+          <div class="eyebrow">Features</div>
+          <h2 class="section-title">Built for a steady posting rhythm</h2>
+          <p class="section-sub">Drop finished videos in a folder. The uploader handles the rest, every day, without anyone opening YouTube Studio.</p>
+        </div>
+        <div class="grid">
+          <div class="card reveal">
+            <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+            <h3>Drive folder as the queue</h3>
+            <p>Videos are picked up in order from a Google Drive folder — no manual file handling.</p>
+          </div>
+          <div class="card reveal">
+            <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <h3>Scheduled publishing</h3>
+            <p>Publishes one or two videos a day at set times to keep the channel consistent.</p>
+          </div>
+          <div class="card reveal">
+            <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h7"/></svg></div>
+            <h3>Metadata included</h3>
+            <p>Each upload gets its title, description, tags and privacy setting applied automatically.</p>
+          </div>
+          <div class="card reveal">
+            <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+            <h3>Made for Shorts</h3>
+            <p>Optimized for vertical 9:16 videos under a minute — the format the channel publishes.</p>
+          </div>
+          <div class="card reveal">
+            <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg></div>
+            <h3>Official Google sign-in</h3>
+            <p>Uses Google OAuth and the YouTube Data API. No passwords are ever stored.</p>
+          </div>
+          <div class="card reveal">
+            <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+            <h3>Upload log</h3>
+            <p>Every upload is logged with its video ID and time, so nothing is posted twice.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="container">
+        <div class="reveal">
+          <div class="eyebrow">How it works</div>
+          <h2 class="section-title">Three steps, then hands-off</h2>
+          <p class="section-sub">A one-time setup, after which the uploader runs on its own.</p>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <h3>Connect</h3>
+            <p>The channel owner signs in once with Google and grants permission to upload to their channel.</p>
+          </div>
+          <div class="step reveal">
+            <h3>Fill the folder</h3>
+            <p>Finished Shorts and their details are added to the Drive folder as they're produced.</p>
+          </div>
+          <div class="step reveal">
+            <h3>It publishes</h3>
+            <p>On schedule, the next video is uploaded to YouTube with its metadata and goes live.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy">
+      <div class="container">
+        <div class="trust reveal">
+          <div>
+            <div class="eyebrow">Data &amp; privacy</div>
+            <h2>Your channel, your data — nothing more.</h2>
+            <p>Shorts Uploader is a personal tool used only by its owner. It accesses only what it needs to publish videos and never shares data with anyone.</p>
+          </div>
+          <ul class="checks">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Only uploads to the signed-in user's own channel</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>No data sold, shared or sent to third parties</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Access can be revoked anytime from your Google Account</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Follows the <a href="https://developers.google.com/terms/api-services-user-data-policy" style="text-decoration:underline">Google API Services User Data Policy</a></span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 Shorts Uploader · <a href="mailto:msaad88786@gmail.com">msaad88786@gmail.com</a></span>
+      <nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+</body>
+</html>
